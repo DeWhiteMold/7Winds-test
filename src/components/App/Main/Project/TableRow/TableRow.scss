@@ -1,0 +1,92 @@
+@use '../../../../../consts/sryleConsts.scss' as colors;
+
+.table-row {
+  border-top: 1px solid colors.$border;
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+  td {
+    box-sizing: border-box;
+    padding: 0 12px;
+    width: 200px;
+    color: colors.$primaryText;
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.1px;
+
+    &:first-of-type {
+      width: 110px;
+      padding-left: 9px;
+    }
+
+    &:nth-child(2) {
+      width: 757px;
+    }
+  }
+
+  &__functions {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: min-content;
+    align-items: center;
+    gap: 6px;
+    box-sizing: border-box;
+    padding: 2px 7px 2px 2px;
+    border-radius: 6px;
+
+    &-box {
+      position: relative;
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+
+      &:nth-of-type(2) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      width: 55px;
+      background-color: colors.$border;
+
+      .table-row__functions-btn:nth-of-type(2) {
+        display: flex;
+      }
+    }
+  }
+
+  &__connection-line {
+    z-index: 0;
+    position: absolute;
+    bottom: 14px;
+    left: -5px;
+    display: flex;
+    width: 11px;
+    height: 53px;
+    border-bottom: solid 1px colors.$connectionLine;
+    border-left: solid 1px colors.$connectionLine;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 1px solid colors.$border;
+    border-radius: 6px;
+    display: flex;
+    height: 36px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: colors.$placeholderColor;
+    outline: none;
+  }
+}
