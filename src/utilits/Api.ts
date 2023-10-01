@@ -17,7 +17,7 @@ class Api {
 
   getRows() {
     return fetch(`${this._url}/list`)
-      .then((res) => {this._getResponse(res)})
+      .then((res) => {return this._getResponse(res)})
   }
 
   createRow(row: rowI) {
@@ -25,7 +25,7 @@ class Api {
       method: 'POST',
       body: JSON.stringify(row)
     })
-      .then((res) => {this._getResponse(res)})
+      .then((res) => {return this._getResponse(res)})
   }
 
   updateRow(row: rowI) {
@@ -33,14 +33,14 @@ class Api {
       method: 'POST',
       body: JSON.stringify(row)
     })
-      .then((res) => {this._getResponse(res)})
+      .then((res) => {return this._getResponse(res)})
   }
 
   deleteRow(rowId: number) {
     return fetch(`${this._url}/${rowId}/delete`, {
       method: 'POST',
     })
-      .then((res) => {this._getResponse(res)})
+      .then((res) => {return this._getResponse(res)})
   }
 }
 
