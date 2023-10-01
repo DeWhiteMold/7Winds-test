@@ -1,0 +1,40 @@
+@use '../../../consts/sryleConsts.scss' as colors;
+
+.header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 45px;
+  background-color: colors.$bgLigth;
+  border-bottom: 1px solid colors.$border;
+
+  &__quick-btns {
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__menagment{
+    display: flex;
+    gap: 22px;
+    margin-left: 28px;
+    height: 100%;
+
+    &-btn {
+      color: colors.$secondaryText;
+      padding: 0 4px 0 3px;
+      height: 100%;
+      font-family: 'Roboto';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      
+
+      &_selected {
+        color: colors.$primaryText;
+        border-bottom: 2px solid colors.$primaryText;
+      }
+    }
+  }
+}
