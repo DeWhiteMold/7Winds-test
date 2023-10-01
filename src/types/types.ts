@@ -1,4 +1,4 @@
-interface row {
+interface rowI {
   id?: number
   equipmentCosts: number,
   estimatedProfit: number,
@@ -13,4 +13,4 @@ interface row {
   supportCosts: 0,
 }
 
-export type { row }
+export type { rowI }

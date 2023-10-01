@@ -1,5 +1,5 @@
 import { entityId, url } from "../consts/consts";
-import { row } from "../types/types";
+import { rowI } from "../types/types";
 
 class Api {
   private _url: string
@@ -20,7 +20,7 @@ class Api {
       .then((res) => {this._getResponse(res)})
   }
 
-  createRow(row: row) {
+  createRow(row: rowI) {
     return fetch(`${this._url}/create`, {
       method: 'POST',
       body: JSON.stringify(row)
@@ -28,7 +28,7 @@ class Api {
       .then((res) => {this._getResponse(res)})
   }
 
-  updateRow(row: row) {
+  updateRow(row: rowI) {
     return fetch(`${this._url}/${row.id}/update`, {
       method: 'POST',
       body: JSON.stringify(row)
