@@ -16,9 +16,7 @@ class Api {
   }
 
   getRows() {
-    return fetch(`${this._url}/list`, {
-      method: 'POST',
-    })
+    return fetch(`${this._url}/list`)
       .then((res) => {this._getResponse(res)})
   }
 
