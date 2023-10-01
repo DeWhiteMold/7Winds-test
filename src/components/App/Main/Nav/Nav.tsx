@@ -3,7 +3,7 @@ import './Nav.scss'
 import { SvgIcon } from '@mui/material';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { mockProjects } from '../../../../consts/consts';
-import Project from './Project/Project';
+import NavProject from './NavProject/NavProject';
 
 const Nav: FC = () => {
   return (
@@ -20,7 +20,7 @@ const Nav: FC = () => {
       <ul className="nav__projects">
         {
           mockProjects.map((project) => {
-            return <Project projectName={project} />
+            return <NavProject projectName={project} />
           })
         }
       </ul>

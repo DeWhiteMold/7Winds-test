@@ -1,6 +1,6 @@
 @use '../../../../../consts/sryleConsts.scss' as colors;
 
-.project {
+.nav-project {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -18,7 +18,7 @@
   }
 
   //В реальном проекте был бы класс c модификатором 
-  //"project_selected" который бы применялся в зависимости
+  //"nav-project_selected" который бы применялся в зависимости
   //от пропсов элемента
   &:nth-of-type(5) {
     background-color: colors.$secondaryText;
