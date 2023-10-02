@@ -1,4 +1,4 @@
-@use '../../../../consts/sryleConsts.scss' as colors;
+@use "../../../../consts/sryleConsts.scss" as colors;
 
 .project {
   display: flex;
@@ -8,7 +8,7 @@
   &__name {
     width: fit-content;
     color: colors.$primaryText;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -34,7 +34,7 @@
       width: 200px;
       color: colors.$secondaryText;
       text-align: left;
-      font-family: 'Roboto';
+      font-family: "Roboto";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;

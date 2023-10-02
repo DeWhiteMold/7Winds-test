@@ -1,5 +1,6 @@
 interface rowI {
-  id?: number
+  id?: number,
+  child?: rowI[],
   equipmentCosts: number,
   estimatedProfit: number,
   machineOperatorSalary: number,

@@ -44,6 +44,10 @@
 
     &-box {
       position: relative;
+
+      &_child {
+        margin-left: 20px;
+      }
     }
 
     &-btn {
@@ -75,6 +79,10 @@
     height: 53px;
     border-bottom: solid 1px colors.$connectionLine;
     border-left: solid 1px colors.$connectionLine;
+
+    &_long {
+      height: 60px;
+    }
   }
 
   &__input {

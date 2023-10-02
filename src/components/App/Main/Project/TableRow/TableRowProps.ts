@@ -1,13 +1,11 @@
-import { rowI } from "../../../../../types/types";
+import { rowI } from "../../../../../types/types"
 
 interface TableRowProps {
   row: rowI,
-  parentId?: number|null,
-  addChildRow?:(rowId: number) => void,
-  deleteRow?:(rowId: number) => void,
-  createNewRow?:(newRow: rowI) => void,
-  editRow?:(newRow: rowI) => void,
+  child?: boolean,
+  prevuiosRowChildrens?: number,
+  level: number,
+  secondChild?: boolean,
 }
 
 export type { TableRowProps }
-
