@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { SvgIcon } from '@mui/material'
-import './Header.scss'
+import './Header.sass'
 import { Apps, Reply } from '@mui/icons-material'
 
 const Header: FC = () => {

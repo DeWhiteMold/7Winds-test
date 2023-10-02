@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './NavProject.scss'
+import './NavProject.sass'
 import NavProjectProps from './NavProjectProps';
 import { SvgIcon } from '@mui/material';
 import { Dashboard } from '@mui/icons-material';

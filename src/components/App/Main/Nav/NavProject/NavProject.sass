@@ -1,0 +1,23 @@
+@use '../../../../../consts/sryleConsts.sass' as colors
+
+.nav-project 
+  display: flex
+  align-items: center
+  gap: 14px
+  height: 32px
+  box-sizing: border-box
+  padding: 5px 20px
+
+  &__name 
+    color: colors.$primaryText
+    font-family: 'Roboto'
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+  //В реальном проекте был бы класс c модификатором 
+  //"nav-project_selected" который бы применялся в зависимости
+  //от пропсов элемента
+  &:nth-of-type(5) 
+    background-color: colors.$secondaryText

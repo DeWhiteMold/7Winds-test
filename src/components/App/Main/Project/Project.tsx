@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react"
-import "./Project.scss"
+import "./Project.sass"
 import { rowI } from "../../../../types/types"
 import api from "../../../../utilits/Api"
 import TableRow from "./TableRow/TableRow"

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './Main.scss'
+import './Main.sass'
 import Nav from './Nav/Nav';
 import Project from './Project/Project';
 

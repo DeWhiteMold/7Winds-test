@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react'
-import './TableRow.scss'
+import './TableRow.sass'
 import { TableRowProps } from './TableRowProps'
 import { SvgIcon } from '@mui/material'
 import { Feed } from '@mui/icons-material'

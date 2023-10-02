@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './Nav.scss'
+import './Nav.sass'
 import { SvgIcon } from '@mui/material';
 import { KeyboardArrowDown } from '@mui/icons-material';
 import { mockProjects } from '../../../../consts/consts';
